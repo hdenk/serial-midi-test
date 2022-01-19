@@ -1,0 +1,11 @@
+midi.useRawSerial()
+basic.forever(function () {
+    midi.toneOn(262)
+    basic.showIcon(IconNames.Heart)
+    basic.pause(500)
+    midi.toneOff(262)
+    midi.toneOn(440)
+    basic.showIcon(IconNames.SmallHeart)
+    basic.pause(500)
+    midi.toneOff(440)
+})
